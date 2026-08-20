@@ -155,14 +155,14 @@ export const TerminalHero = () => {
       {/* Text Container */}
       <div 
         ref={glassBoxRef}
-        className="z-10 max-w-4xl self-start"
+        className="z-10 max-w-4xl self-center sm:self-start w-full sm:w-auto"
       >
         <h1
           ref={nameRef}
-          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-wide mb-4 text-white uppercase min-h-[2.5rem] sm:min-h-[3.5rem] md:min-h-[4.5rem] whitespace-nowrap"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-wide mb-4 text-white uppercase text-center sm:text-left sm:whitespace-nowrap min-h-[2.5rem] sm:min-h-[3.5rem] md:min-h-[4.5rem]"
         ></h1>
 
-        <div className="flex items-center">
+        <div className="flex items-center justify-center sm:justify-start">
           <span className="font-mono text-lg sm:text-xl md:text-2xl text-accent-cyan mr-2">//</span>
           <p
             ref={roleRef}

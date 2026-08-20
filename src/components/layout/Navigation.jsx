@@ -57,7 +57,7 @@ export const Navigation = () => {
           : "top-6 py-3 bg-transparent backdrop-blur-[6px] border border-white/[0.03] shadow-none",
       )}
     >
-      <div className="w-full mx-auto grid grid-cols-3 items-center">
+      <div className="w-full mx-auto grid grid-cols-2 md:grid-cols-3 items-center">
         <a
           href="#"
           className="nav-item justify-self-start text-2xl font-display font-bold text-text-primary tracking-tighter hover:text-accent-cyan transition-colors opacity-0"
@@ -83,10 +83,10 @@ export const Navigation = () => {
           href="https://drive.google.com/file/d/1oekWLEbEZPcQR1b7DUKh68dRTg6WeYXA/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
-          className="nav-item group relative hidden md:inline-flex items-center gap-2 justify-self-end px-5 py-2 border border-accent-cyan text-accent-cyan font-mono text-sm rounded overflow-hidden hover:shadow-[0_0_15px_rgba(145,71,255,0.4)] transition-shadow duration-300 font-semibold opacity-0"
+          className="nav-item group relative inline-flex items-center gap-2 justify-self-end px-3 md:px-5 py-2 border border-accent-cyan text-accent-cyan font-mono text-sm rounded overflow-hidden hover:shadow-[0_0_15px_rgba(145,71,255,0.4)] transition-shadow duration-300 font-semibold opacity-0"
         >
           <span className="relative z-10 flex items-center gap-2 group-hover:text-bg-primary transition-colors duration-300">
-            RESUME
+            <span>RESUME</span>
             <Download size={16} className="group-hover:animate-bounce" />
           </span>
           <div className="absolute inset-0 bg-accent-cyan scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out z-0"></div>

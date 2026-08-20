@@ -69,7 +69,7 @@ export const FooterLinks = () => {
       
       {/* Toast Message */}
       <div 
-        className={`absolute -top-14 left-1/2 -translate-x-1/2 bg-transparent backdrop-blur-md border border-accent-emerald/50 text-accent-emerald px-4 py-1.5 rounded text-xs font-mono tracking-widest uppercase transition-all duration-300 pointer-events-none ${
+        className={`absolute -top-14 left-1/2 -translate-x-1/2 bg-transparent backdrop-blur-md border border-accent-emerald/50 text-accent-emerald px-4 py-1.5 rounded text-xs font-mono tracking-widest uppercase transition-all duration-300 pointer-events-none whitespace-nowrap ${
           toastMsg ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
         }`}
       >
