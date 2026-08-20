@@ -4,13 +4,21 @@
 
 **A cyberpunk-themed developer portfolio built with React, GSAP, and Framer Motion.**
 
+<<<<<<< HEAD
 [![Netlify Status](https://api.netlify.com/api/v1/badges/deploy-status/deploy-status)](https://sxd-portfolio.netlify.app/)
+=======
+[![Netlify Status](https://api.netlify.com/api/v1/badges/deploy-status/deploy-status)](https://sxd-pf.netlify.app/)
+>>>>>>> 4b4f4cad0f2975c3659e6df760872b4850fc52c5
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-4-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![License](https://img.shields.io/badge/License-MIT-9147FF)](#license)
 
+<<<<<<< HEAD
 [**⟶ View Live**](https://sxd-portfolio.netlify.app/)
+=======
+[**⟶ View Live**](https://sxd-pf.netlify.app/)
+>>>>>>> 4b4f4cad0f2975c3659e6df760872b4850fc52c5
 
 </div>
 
