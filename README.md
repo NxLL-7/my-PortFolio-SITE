@@ -10,7 +10,7 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-4-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![License](https://img.shields.io/badge/License-MIT-9147FF)](#license)
 
-[**⟶ View Live**](https://sxd-portfolio.netlify.app/)
+[**⟶ View Live**](https://sxd-pf.netlify.app/)
 
 </div>
 
