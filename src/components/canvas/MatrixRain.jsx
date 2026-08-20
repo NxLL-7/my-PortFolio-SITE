@@ -35,7 +35,20 @@ export const MatrixRain = () => {
     const chars =
       "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレゲゼデベペオォコソトノホモヨョロゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+    let lastWidth = 0;
+    let lastHeight = 0;
+
     const resize = () => {
+      const widthChanged = window.innerWidth !== lastWidth;
+      const heightChanged = Math.abs(window.innerHeight - lastHeight) > 100;
+
+      if (!widthChanged && !heightChanged && lastWidth !== 0) {
+        return;
+      }
+
+      lastWidth = window.innerWidth;
+      lastHeight = window.innerHeight;
+
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       const colCount = Math.floor(canvas.width / fontSize);
