@@ -15,12 +15,12 @@ export const ParticleField = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Make particles clearer when scrolling (as matrix blurs)
+    // Keep particles clearly visible even at the top of the screen
     const isReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!isReducedMotion) {
       gsap.fromTo(
         canvas,
-        { opacity: 0.3 },
+        { opacity: 1 },
         {
           opacity: 1,
           scrollTrigger: {
@@ -109,9 +109,9 @@ export const ParticleField = () => {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${p.color.r}, ${p.color.g}, ${p.color.b}, 0.95)`;
+        ctx.fillStyle = `rgba(${p.color.r}, ${p.color.g}, ${p.color.b}, 1)`;
         // Enhanced color-matched glow for clearer particles
-        ctx.shadowBlur = 12;
+        ctx.shadowBlur = 25;
         ctx.shadowColor = `rgba(${p.color.r}, ${p.color.g}, ${p.color.b}, 1)`;
         ctx.fill();
         // Reset shadow for lines

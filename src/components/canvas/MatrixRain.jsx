@@ -60,8 +60,8 @@ export const MatrixRain = () => {
       }
     };
 
-    // White & black shades only
-    const colors = ["#FFFFFF", "#E0E0E0", "#B0B0B0", "#909090", "#D0D0D0"];
+    // Pure white shade only
+    const colors = ["#FFFFFF"];
 
     const draw = () => {
       const isReducedMotion = window.matchMedia(

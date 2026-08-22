@@ -1,7 +1,7 @@
 export const resume = {
   name: "SIDDHARTHA CHAKRABARTY",
   handle: "S x Ð ",
-  title: "Full-Stack Developer // Cybersec Researcher",
+  title: "Full-Stack Developer // Cybersecurity Enthusiast // Ethical Hacker // Security Researcher // CSE Student",
   contact: {
     email: "sidh4249@gmail.com",
     phone: "+91 7703809349",

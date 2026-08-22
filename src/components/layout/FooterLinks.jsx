@@ -127,7 +127,7 @@ export const FooterLinks = () => {
 
         <div className="text-center flex items-center border-t sm:border-t-0 sm:border-l border-white/[0.1] pt-4 mt-4 sm:pt-0 sm:mt-0 sm:pl-8 sm:py-1">
           <p className="font-mono text-sm text-text-muted whitespace-nowrap">
-            {resume.handle} // Built with love
+            {resume.handle} // May God Bless Me
           </p>
         </div>
       </div>

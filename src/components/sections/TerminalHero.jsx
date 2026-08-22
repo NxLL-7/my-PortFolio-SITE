@@ -48,7 +48,7 @@ export const TerminalHero = () => {
             ? resume.title.split("//").map(s => s.trim()).filter(s => s !== "")
             : [resume.title];
         
-        let roleIndex = 0;
+        let roleIndex = Math.floor(Math.random() * roles.length);
         const chars = "!<>-_\\/[]{}—=+*^?#";
         
         const animateScramble = (element, newText, duration, onCompleteCb) => {
@@ -87,7 +87,13 @@ export const TerminalHero = () => {
           animateScramble(roleRef.current, roles[roleIndex], 1.2, () => {
             gsap.delayedCall(2, () => {
               animateScramble(roleRef.current, "", 0.8, () => {
-                roleIndex = (roleIndex + 1) % roles.length;
+                if (roles.length > 1) {
+                  let nextIndex;
+                  do {
+                    nextIndex = Math.floor(Math.random() * roles.length);
+                  } while (nextIndex === roleIndex);
+                  roleIndex = nextIndex;
+                }
                 typeRole();
               });
             });
